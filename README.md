@@ -1,6 +1,6 @@
 # Addition
 
-### To skip the java files from compilation:
+### To skip the java files from compilation: (through plugin)
 
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
@@ -13,7 +13,7 @@
       </configuration>
     </plugin>
     
-  ### To skip the test cases compilation & execution
+  ### To skip the test cases compilation & execution (through plugin)
   
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -27,6 +27,6 @@
           </configuration>
         </plugin>
   
-### To skip the test cases execution: mvn clean install -DskipTests=true
+### To skip the test cases execution(using maven command): mvn clean install -DskipTests=true
 
-### To skip the test cases execution: mvn clean install -Dmaven.test.skip=true
+### To skip the test cases execution(using maven command): mvn clean install -Dmaven.test.skip=true
