@@ -27,6 +27,12 @@
           </configuration>
         </plugin>
   
-### To skip the test cases execution(using maven command): mvn clean install -DskipTests=true
+#### To skip the test cases execution(using maven command): mvn clean install -DskipTests=true
 
-### To skip the test cases execution(using maven command): mvn clean install -Dmaven.test.skip=true
+#### To skip the test cases execution(using maven command): mvn clean install -Dmaven.test.skip=true
+
+#### Run checkstyle goal on your project: mvn clean install checkstyle:checkstyle
+
+#### Run checkstyle goal on your project & fail the build if any errors: mvn clean install checkstyle:checkstyle checkstyle:check
+
+#### Run checkstyle goal on your project & abd check the error but dont fail the build: mvn clean compile checkstyle:checkstyle checkstyle:check -Dcheckstyle.failOnViolation=false
