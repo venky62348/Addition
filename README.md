@@ -26,6 +26,10 @@
             <skip>true</skip> -->
           </configuration>
         </plugin>
+        
+#### java -jar <path>/<Package>.jar
+    
+    Ex: java -jar target/Addition-1.0.0-SNAPSHOT.jar
   
 #### To skip the test cases execution(using maven command): mvn clean install -DskipTests=true
 
