@@ -34,4 +34,8 @@ public class AdditionTest extends TestCase{
 		assertEquals(700.00,add.addition(400.50,299.50));
 		System.out.println("testSumOfTwoFloatNumbers: "+add.addition(400.50,299.50));
 	}
+	public void testSumOfTwoFloatNumbers() {
+		assertEquals(1100.00,add.addition(400.50,299.50,200,200));
+		System.out.println("testSumOfTwoFloatNumbers: "+add.addition(400.50,299.50));
+	}
 }
