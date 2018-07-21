@@ -1,7 +1,7 @@
-# Addition - from master branch
+# Addition
 
 ### To skip the java files from compilation: (through plugin)
-
+ 
     <plugin>
       <groupId>org.apache.maven.plugins</groupId>
       <artifactId>maven-compiler-plugin</artifactId>
