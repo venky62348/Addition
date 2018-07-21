@@ -38,4 +38,8 @@ public class AdditionTest extends TestCase{
 		assertEquals(1100.00,add.addition(400.50,299.50,200,200));
 		System.out.println("testSumOfTwoFloatNumbers: "+add.addition(400.50,299.50));
 	}
+	public void testSumOfTwoOneBigPositiveAndNegativeNumbers() {
+		assertEquals(100.00,add.addition(400,-300,-200,200));
+		System.out.println("testSumOfTwoOneBigPositiveAndNegativeNumbers: "+add.addition(400,-300));
+	}
 }
