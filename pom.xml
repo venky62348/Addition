@@ -4,7 +4,7 @@
 
 	<groupId>com.devops.calculator.addition</groupId>
 	<artifactId>Addition</artifactId>
-	<version>${buildVersion}</version>
+	<version>${releaseVersion}</version>
 	<!-- <packaging>jar</packaging> -->
 
 	<properties>
