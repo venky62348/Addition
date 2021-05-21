@@ -3,6 +3,8 @@ package com.devops.calculator.main;
 import java.util.Scanner;
 import com.devops.calculator.addition.Addition;
 
+// demo: git poll scm test with jenkins
+
 public class MainClass {
 
 	public static void main(String[] args) {
