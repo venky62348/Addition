@@ -13,7 +13,7 @@ public class Addition{
 		return a+b+c;
 	}
 
-	public double addition(double a, double b, double c){
+	public double addition2(double a, double b, double c){
 		return a+b+c;
 	}
 }
