@@ -1,6 +1,6 @@
 # Addition - master branch
 
-# test commit
+# Testing Git Poll SCM 
 
 ### To skip the java files from compilation: (through plugin)
  
