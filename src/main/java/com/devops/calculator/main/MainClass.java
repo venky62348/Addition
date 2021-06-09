@@ -13,13 +13,12 @@ public class MainClass {
 		
 		System.out.println("\n\tAdding two numbers: "+add.addition(10,100));
 		
-		Scanner sc=new Scanner(System.in);
+		int A = Integer.valueOf(args[0]).intValue();
+		System.out.print("\nValue of number 'A' is: "+A);
 		
-		System.out.print("\nEnter a number for 'A': ");
-		int A = sc.nextInt();
+		int B = Integer.valueOf(args[1]).intValue();
+		System.out.print("Value of number 'B' is: "+A);
 		
-		System.out.print("Enter a number for 'B': ");
-		int B = sc.nextInt();
 		
 		System.out.println("\n\tAdding two numbers A+B is: "+add.addition(A,B));
 
