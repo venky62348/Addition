@@ -6,6 +6,6 @@ RUN git clone https://github.com/CalculatorApps/Addition.git
 
 WORKDIR Addition
 
-RUN mvn clean install -DreleaseVersion=1.0.0
+RUN mvn -B clean install -DreleaseVersion=1.0.0
 
 CMD ["java", "-jar", "target/Addition-1.0.0.jar"]
