@@ -19,7 +19,7 @@ public class MainClass {
 		System.out.print("\nValue of number 'A' is: "+A);
 		
 		int B = Integer.valueOf(args[1]).intValue();
-		System.out.print("\nValue of number 'B' is: "+A);
+		System.out.print("\nValue of number 'B' is: "+B);
 		
 		
 		System.out.println("\n\tAdding two numbers A+B is: "+add.addition(A,B));
