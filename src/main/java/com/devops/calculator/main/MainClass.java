@@ -22,6 +22,7 @@ public class MainClass {
 		int B = sc.nextInt();
 		
 		System.out.println("\n\tAdding two numbers A+B is: "+add.addition(A,B));
+		System.out.println("\n\tAdding two numbers A+B is: "+add.addition(A,B));
 
 	}
 
