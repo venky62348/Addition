@@ -11,7 +11,7 @@ public class MainClass {
 		
 		Addition add = new Addition();
 		
-		System.out.println("\n\tAdding two numbers: "+add.addition(10,100));
+		System.out.println("\n\t Sample output of addition of two numbers 10 and 100 is: "+add.addition(10,100));
 		
 		Scanner sc=new Scanner(System.in);
 		
