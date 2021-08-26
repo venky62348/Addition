@@ -1,0 +1,22 @@
+Started by user [8mha:////4JaAcqbkvNLNHw645mXQ1V5RAFw46W4HfznaNcl2aFxxAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Addition
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/CalculatorApps/Addition.git
+ > git init /var/jenkins_home/workspace/Addition # timeout=10
+Fetching upstream changes from https://github.com/CalculatorApps/Addition.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/CalculatorApps/Addition.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/CalculatorApps/Addition.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 4c3070ca19419505f2ec75c1379d38a1da412fda (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4c3070ca19419505f2ec75c1379d38a1da412fda # timeout=10
+Commit message: "Update pom.xml"
+First time build. Skipping changelog.
+Finished: SUCCESS

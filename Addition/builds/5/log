@@ -1,0 +1,70 @@
+Started by user [8mha:////4JaAcqbkvNLNHw645mXQ1V5RAFw46W4HfznaNcl2aFxxAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Addition
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Addition/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/CalculatorApps/Addition.git # timeout=10
+Fetching upstream changes from https://github.com/CalculatorApps/Addition.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/CalculatorApps/Addition.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 4c3070ca19419505f2ec75c1379d38a1da412fda (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4c3070ca19419505f2ec75c1379d38a1da412fda # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk 4c3070ca19419505f2ec75c1379d38a1da412fda # timeout=10
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.8.1/apache-maven-3.8.1-bin.zip to /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.8.1 on Jenkins
+[Addition] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.8.1/bin/mvn clean
+[INFO] Scanning for projects...
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] Some problems were encountered while building the effective model for com.devops.calculator.addition:Addition:jar:1.0.0-SNAPSHOT
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ line 18, column 12
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[INFO] 
+[INFO] --------------< com.devops.calculator.addition:Addition >---------------
+[INFO] Building Addition 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+Progress (1): 2.7/3.9 kBProgress (1): 3.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (3.9 kB at 6.5 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+Progress (1): 2.7/13 kBProgress (1): 5.5/13 kBProgress (1): 8.2/13 kBProgress (1): 11/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 kB at 435 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom
+Progress (1): 2.7/26 kBProgress (1): 5.5/26 kBProgress (1): 8.2/26 kBProgress (1): 11/26 kB Progress (1): 14/26 kBProgress (1): 16/26 kBProgress (1): 19/26 kBProgress (1): 22/26 kBProgress (1): 25/26 kBProgress (1): 26 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/21/maven-parent-21.pom (26 kB at 497 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom
+Progress (1): 2.7/15 kBProgress (1): 5.5/15 kBProgress (1): 8.2/15 kBProgress (1): 11/15 kB Progress (1): 14/15 kBProgress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/10/apache-10.pom (15 kB at 529 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar
+Progress (1): 2.7/25 kBProgress (1): 6.8/25 kBProgress (1): 11/25 kB Progress (1): 15/25 kBProgress (1): 19/25 kBProgress (1): 23/25 kBProgress (1): 25 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.jar (25 kB at 880 kB/s)
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Addition ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+Progress (1): 1.5 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom (1.5 kB at 121 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+Progress (1): 4.1/9.0 kBProgress (1): 8.2/9.0 kBProgress (1): 9.0 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom (9.0 kB at 532 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+Progress (1): 4.1/15 kBProgress (1): 8.2/15 kBProgress (1): 12/15 kB Progress (1): 15 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom (15 kB at 564 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom
+Progress (1): 3.4 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom (3.4 kB at 214 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom
+Progress (1): 4.1 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.pom (4.1 kB at 254 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom
+Progress (1): 4.1/8.4 kBProgress (1): 8.2/8.4 kBProgress (1): 8.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/16/spice-parent-16.pom (8.4 kB at 440 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Progress (1): 4.1/8.4 kBProgress (1): 8.2/8.4 kBProgress (1): 8.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 440 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+Progress (1): 4.1/13 kBProgress (1): 8.2/13 kBProgress (1): 12/13 kB Progress (1): 13 kB                      Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.jar (13 kB at 292 kB/s)
+Progress (1): 2.7/226 kBProgress (1): 5.5/226 kBProgress (1): 8.2/226 kBProgress (1): 11/226 kB Progress (1): 14/226 kBProgress (1): 16/226 kBProgress (1): 19/226 kBProgress (1): 22/226 kBProgress (1): 25/226 kBProgress (1): 27/226 kBProgress (1): 30/226 kBProgress (1): 33/226 kBProgress (1): 36/226 kBProgress (1): 38/226 kBProgress (1): 41/226 kBProgress (1): 44/226 kBProgress (1): 47/226 kBProgress (1): 49/226 kBProgress (1): 52/226 kBProgress (1): 55/226 kBProgress (1): 58/226 kBProgress (1): 60/226 kBProgress (1): 63/226 kBProgress (1): 66/226 kBProgress (1): 70/226 kBProgress (1): 74/226 kBProgress (1): 78/226 kBProgress (1): 82/226 kBProgress (1): 86/226 kBProgress (1): 90/226 kBProgress (1): 94/226 kBProgress (1): 99/226 kBProgress (1): 103/226 kBProgress (1): 107/226 kBProgress (1): 111/226 kBProgress (1): 115/226 kBProgress (1): 119/226 kBProgress (1): 123/226 kBProgress (1): 127/226 kBProgress (1): 131/226 kBProgress (1): 135/226 kBProgress (1): 140/226 kBProgress (1): 144/226 kBProgress (1): 148/226 kBProgress (1): 152/226 kBProgress (1): 156/226 kBProgress (1): 160/226 kBProgress (1): 164/226 kBProgress (1): 168/226 kBProgress (1): 172/226 kBProgress (1): 176/226 kBProgress (1): 180/226 kBProgress (1): 185/226 kBProgress (1): 189/226 kBProgress (1): 193/226 kBProgress (1): 197/226 kBProgress (1): 201/226 kBProgress (1): 205/226 kBProgress (1): 209/226 kBProgress (1): 213/226 kBProgress (1): 217/226 kBProgress (1): 221/226 kBProgress (1): 226/226 kBProgress (1): 226 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 1.2 MB/s)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.303 s
+[INFO] Finished at: 2021-08-26T02:45:38Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS

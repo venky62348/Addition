@@ -1,0 +1,80 @@
+Started by user [8mha:////4JaAcqbkvNLNHw645mXQ1V5RAFw46W4HfznaNcl2aFxxAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL9lNSy/IJiAEFU5gjBAAAA[0mdevops
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Addition
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/Addition/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/CalculatorApps/Addition.git # timeout=10
+Fetching upstream changes from https://github.com/CalculatorApps/Addition.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/CalculatorApps/Addition.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision e75f0405d9d9a081fc989d0e622e2de5857ce15d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e75f0405d9d9a081fc989d0e622e2de5857ce15d # timeout=10
+Commit message: "Update pom.xml"
+ > git rev-list --no-walk e75f0405d9d9a081fc989d0e622e2de5857ce15d # timeout=10
+[Addition] $ /bin/sh -xe /tmp/jenkins10907138371846105483.sh
++ echo Printing some message
+Printing some message
++ echo print-2
+print-2
++ echo Boolean param value: true
+Boolean param value: true
++ echo Choice param value: SNAPSHOT
+Choice param value: SNAPSHOT
++ echo String param value: 1.0.2
+String param value: 1.0.2
+[Addition] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven-3.8.1/bin/mvn clean -B install -DreleaseVersion=1.0.2 -DskipTests=true
+[INFO] Scanning for projects...
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] Some problems were encountered while building the effective model for com.devops.calculator.addition:Addition:jar:1.0.2
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 'version' contains an expression but should be a constant. @ com.devops.calculator.addition:Addition:${releaseVersion}, /var/jenkins_home/workspace/Addition/pom.xml, line 7, column 11
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-jar-plugin is missing. @ com.devops.calculator.addition:Addition:${releaseVersion}, /var/jenkins_home/workspace/Addition/pom.xml, line 18, column 12
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[8mha:////4CHp5XJz7Qga3I1zXWpspTP5lZA5CY74jkHa8Yk2fSNrAAAAYh+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6SeOJwgmrt9CSsTA0NFEYMUVEtyfl5xfk6qnjOEBilkgABGkMICAEQzmI1iAAAA[0m[WARNING] 
+[INFO] 
+[INFO] --------------< com.devops.calculator.addition:Addition >---------------
+[INFO] Building Addition 1.0.2
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ Addition ---
+[INFO] Deleting /var/jenkins_home/workspace/Addition/target
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ Addition ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Addition/src/main/resources
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ Addition ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /var/jenkins_home/workspace/Addition/target/classes
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ Addition ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /var/jenkins_home/workspace/Addition/src/test/resources
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ Addition ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /var/jenkins_home/workspace/Addition/target/test-classes
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ Addition ---
+[INFO] Tests are skipped.
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ Addition ---
+[INFO] Building jar: /var/jenkins_home/workspace/Addition/target/Addition-1.0.2.jar
+[INFO] 
+[8mha:////4DpbHvI7Xk2HjG30i1YXHYWixVdNWbrMmpbGBP/tGhZDAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-install-plugin:2.4:install (default-install) @ Addition ---
+[INFO] Installing /var/jenkins_home/workspace/Addition/target/Addition-1.0.2.jar to /var/jenkins_home/.m2/repository/com/devops/calculator/addition/Addition/1.0.2/Addition-1.0.2.jar
+[INFO] Installing /var/jenkins_home/workspace/Addition/pom.xml to /var/jenkins_home/.m2/repository/com/devops/calculator/addition/Addition/1.0.2/Addition-1.0.2.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.697 s
+[INFO] Finished at: 2021-08-26T03:03:21Z
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
