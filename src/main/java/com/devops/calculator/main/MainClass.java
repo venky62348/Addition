@@ -13,6 +13,8 @@ public class MainClass {
 		
 		System.out.println("\n\t Sample output of addition of two numbers 10 and 100 is: "+add.addition(10,100));
 		
+		System.out.println("\n\t Sample output of addition of two numbers 2000 and 10000 is: "+add.addition(2000,10000));
+		
 		Scanner sc=new Scanner(System.in);
 		
 		System.out.print("\nEnter a number for 'A': ");
