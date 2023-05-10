@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Addition_1683693305021-pr-trigger-input-set
+  identifier: Build_Addition_1683693305021prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: sampleproject
+  pipeline:
+    identifier: Build_Addition_1683693305021
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
